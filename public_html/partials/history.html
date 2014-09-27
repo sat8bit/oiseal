@@ -1,0 +1,32 @@
+<h3>前に貼ったやつ</h3>
+
+<div ng-init="init()"></div>
+
+<div class="seal-column text-center col-xs-6" ng-repeat="seal in seals">
+  <div ng-click="modal(seal)" data-toggle="modal" data-target="#sealModal">
+    <div>
+      <img src="/assets/img/umai.png" style="height:64px;width:64px">
+    </div>
+    <div>{{seal.placeName}}</div>
+    <div style="font-size:14px">{{seal.updateDt}}</div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="sealModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">{{currentSeal.placeName}}</h4>
+      </div>
+      <div class="modal-body">
+      <div class="text-center">
+        <div id="ymap"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,4 @@
+vendor
+.vagrant
+conf/oiseal.ini
+public_html/assets/js/config.js

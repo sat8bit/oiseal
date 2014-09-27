@@ -1,0 +1,30 @@
+.container.content {
+  padding-left:0px !important;
+  padding-right:0px !important;
+}
+
+.place-column {
+  border-top: 1px solid #333;
+  padding-right:15px;
+  padding-left:15px;
+  height:48px;
+  line-height:48px;
+  white-space: nowrap;
+  overflow:hidden;
+  font-size:16px;
+}
+
+.seal-column {
+  border-top: 1px solid #333;
+  padding-right:15px;
+  padding-left:15px;
+  white-space: nowrap;
+  overflow:hidden;
+}
+
+#ymap {
+    width:250px;
+    height:250px;
+    margin-left:auto;
+    margin-right:auto;
+}

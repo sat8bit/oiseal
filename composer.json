@@ -1,0 +1,21 @@
+{
+    "require" : {
+        "slim/slim": "2.*",
+        "slim/views": "dev-develop",
+        "twig/twig": "1.15.*@dev",
+        "facebook/php-sdk-v4": "4.1.*@dev",
+        "guzzlehttp/guzzle": "4.2.*@dev"
+    },
+    "require-dev" : {
+        "phpunit/phpunit": "*",
+        "phake/phake": "2.0.*@dev",
+        "piece/stagehand-testrunner" : "*"
+    },
+    "autoload" : {
+        "psr-0" : {
+            "Oiseal" : [
+                "src/"
+            ]
+        }
+    }
+}
